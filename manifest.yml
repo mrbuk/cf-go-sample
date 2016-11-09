@@ -1,0 +1,5 @@
+---
+applications:
+    - name: cf-go-sample
+      memory: 128m
+      command: cf-go-sample

@@ -1,0 +1,6 @@
+{
+	"ImportPath": "github.com/mrbuk/cf-go-sample",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Deps": []
+}
