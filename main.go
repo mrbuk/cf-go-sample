@@ -27,10 +27,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Sorry a problem occured")
 
 	} else {
-		s := string(b)
+		raw, _ := json.Marshal(filteredRequest)
+		log.Print(string(raw))
+
+		formatted := string(b)
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintf(w, s)
+		fmt.Fprintf(w, formatted)
 	}
 }
 
