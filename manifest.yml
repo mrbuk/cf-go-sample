@@ -1,5 +1,5 @@
 ---
 applications:
-    - name: cf-go-sample
+    - name: dump-headers
       memory: 128m
-      command: cf-go-sample
+      command: dump-headers
